@@ -7,16 +7,16 @@ import joblib
 
 app = Flask(__name__)
 
-Lr = pickle.load(open('E:/Coding/Major/Flood-Prediction-Code/model.pkl', 'rb'))
+Lr = pickle.load(open('asset/model.pkl', 'rb'))
 
-Ur = pickle.load(open('E:/Coding/Major/Flood-Prediction-Code/model1.pkl', 'rb'))
+Ur = pickle.load(open('asset/model1.pkl', 'rb'))
 
-model = pickle.load(open('E:/Coding/Major/Earthquake-Predictor-main/model2.pkl', 'rb'))
+model = pickle.load(open('asset/model2.pkl', 'rb'))
 
-meteor_showers = pd.read_csv('E:/Coding/Major/Predict-meteor-showers-using-Python-main/data/meteorshowers.csv')
-moon_phases = pd.read_csv('E:/Coding/Major/Predict-meteor-showers-using-Python-main/data/moonphases.csv')
-constellations = pd.read_csv('E:/Coding/Major/Predict-meteor-showers-using-Python-main/data/constellations.csv')
-cities = pd.read_csv('E:/Coding/Major/Predict-meteor-showers-using-Python-main/data/cities.csv')
+meteor_showers = pd.read_csv('asset/data/meteorshowers.csv')
+moon_phases = pd.read_csv('asset/data/moonphases.csv')
+constellations = pd.read_csv('asset/data/constellations.csv')
+cities = pd.read_csv('asset/data/cities.csv')
 
 # Define month mapping
 months = {
@@ -158,7 +158,7 @@ def preprocess_weather_data(data):
     return input_data
 
 # Load ML model
-cloud = joblib.load('E:/Coding/Major/CloudBurst-Prediction-Flask-main/model.joblib')  # Use the path to your model file
+cloud = joblib.load('asset/model.joblib')  # Use the path to your model file
 
 
 

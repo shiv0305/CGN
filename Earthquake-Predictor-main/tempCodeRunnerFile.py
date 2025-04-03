@@ -1,1 +1,0 @@
-E:/Coding/Python/bhaago bc/Earthquake-Predictor-main/model.pkl
